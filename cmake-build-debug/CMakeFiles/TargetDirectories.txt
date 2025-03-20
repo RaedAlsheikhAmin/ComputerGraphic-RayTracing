@@ -1,0 +1,3 @@
+D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/CMakeFiles/477hw1.dir
+D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
