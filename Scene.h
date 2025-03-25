@@ -1,5 +1,5 @@
-#ifndef SCENE_H
-#define SCENE_H
+#ifndef INC_477HW1_SCENE_H
+#define INC_477HW1_SCENE_H
 
 #include <vector>
 #include "Object.h"

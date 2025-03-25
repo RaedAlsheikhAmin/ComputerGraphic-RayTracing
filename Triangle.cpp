@@ -5,7 +5,7 @@ Triangle::Triangle(Vector3 v0, Vector3 v1, Vector3 v2, Material material)
     normal = (v1 - v0).cross(v2 - v0).normalize();
 }
 
-bool Triangle::intersect(const Ray& ray, float& t) {
+bool Triangle::intersect(const Ray& ray, float& t) const {
     Vector3 edge1 = v1 - v0, edge2 = v2 - v0;
     Vector3 h = ray.direction.cross(edge2);
     float a = edge1.dot(h);
@@ -25,4 +25,7 @@ bool Triangle::intersect(const Ray& ray, float& t) {
 
     t = f * edge2.dot(q);
     return (t > 1e-6);
+}
+Vector3 Triangle::getNormal(const Vector3& hitPoint) const {
+    return (v1 - v0).cross(v2 - v0).normalize();
 }

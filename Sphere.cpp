@@ -3,7 +3,7 @@
 Sphere::Sphere(Vector3 center, float radius, Material material)
         : Object(material), center(center), radius(radius) {}
 
-bool Sphere::intersect(const Ray& ray, float& t) {
+bool Sphere::intersect(const Ray& ray, float& t) const {
     Vector3 oc = ray.origin - center;
     float b = 2.0 * oc.dot(ray.direction);
     float c = oc.dot(oc) - radius * radius;
@@ -12,4 +12,7 @@ bool Sphere::intersect(const Ray& ray, float& t) {
     if (discriminant < 0) return false;
     t = (-b - sqrt(discriminant)) / 2.0;
     return true;
+}
+    Vector3 Sphere::getNormal(const Vector3& hitPoint) const {
+        return (hitPoint - center).normalize();
 }

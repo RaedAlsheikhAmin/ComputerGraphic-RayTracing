@@ -1,5 +1,5 @@
-#ifndef PPMWRITER_H
-#define PPMWRITER_H
+#ifndef INC_477HW1_PPMWRITER_H
+#define INC_477HW1_PPMWRITER_H
 
 #include <vector>
 #include <fstream>

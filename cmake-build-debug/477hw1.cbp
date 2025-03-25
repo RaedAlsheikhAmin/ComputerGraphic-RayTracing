@@ -100,6 +100,12 @@
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Material.h">
 			<Option target="477hw1"/>
 		</Unit>
+		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Mesh.cpp">
+			<Option target="477hw1"/>
+		</Unit>
+		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Mesh.h">
+			<Option target="477hw1"/>
+		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Object.cpp">
 			<Option target="477hw1"/>
 		</Unit>
@@ -128,6 +134,12 @@
 			<Option target="477hw1"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Scene.h">
+			<Option target="477hw1"/>
+		</Unit>
+		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/SceneParser.cpp">
+			<Option target="477hw1"/>
+		</Unit>
+		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/SceneParser.h">
 			<Option target="477hw1"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Sphere.cpp">

@@ -1,5 +1,5 @@
-#ifndef RAYTRACER_H
-#define RAYTRACER_H
+#ifndef INC_477HW1_RAYTRACER_H
+#define INC_477HW1_RAYTRACER_H
 
 #include "Scene.h"
 #include "Camera.h"

@@ -1,5 +1,5 @@
-#ifndef LIGHT_H
-#define LIGHT_H
+#ifndef INC_477HW1_LIGHT_H
+#define INC_477HW1_LIGHT_H
 
 #include "Vector3.h"
 

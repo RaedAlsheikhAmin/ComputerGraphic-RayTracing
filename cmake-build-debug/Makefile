@@ -200,6 +200,30 @@ Material.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Material.cpp.s
 .PHONY : Material.cpp.s
 
+Mesh.obj: Mesh.cpp.obj
+.PHONY : Mesh.obj
+
+# target to build an object file
+Mesh.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Mesh.cpp.obj
+.PHONY : Mesh.cpp.obj
+
+Mesh.i: Mesh.cpp.i
+.PHONY : Mesh.i
+
+# target to preprocess a source file
+Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Mesh.cpp.i
+.PHONY : Mesh.cpp.i
+
+Mesh.s: Mesh.cpp.s
+.PHONY : Mesh.s
+
+# target to generate assembly for a file
+Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Mesh.cpp.s
+.PHONY : Mesh.cpp.s
+
 Object.obj: Object.cpp.obj
 .PHONY : Object.obj
 
@@ -320,6 +344,30 @@ Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Scene.cpp.s
 .PHONY : Scene.cpp.s
 
+SceneParser.obj: SceneParser.cpp.obj
+.PHONY : SceneParser.obj
+
+# target to build an object file
+SceneParser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/SceneParser.cpp.obj
+.PHONY : SceneParser.cpp.obj
+
+SceneParser.i: SceneParser.cpp.i
+.PHONY : SceneParser.i
+
+# target to preprocess a source file
+SceneParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/SceneParser.cpp.i
+.PHONY : SceneParser.cpp.i
+
+SceneParser.s: SceneParser.cpp.s
+.PHONY : SceneParser.s
+
+# target to generate assembly for a file
+SceneParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/SceneParser.cpp.s
+.PHONY : SceneParser.cpp.s
+
 Sphere.obj: Sphere.cpp.obj
 .PHONY : Sphere.obj
 
@@ -410,6 +458,9 @@ help:
 	@echo ... Material.obj
 	@echo ... Material.i
 	@echo ... Material.s
+	@echo ... Mesh.obj
+	@echo ... Mesh.i
+	@echo ... Mesh.s
 	@echo ... Object.obj
 	@echo ... Object.i
 	@echo ... Object.s
@@ -425,6 +476,9 @@ help:
 	@echo ... Scene.obj
 	@echo ... Scene.i
 	@echo ... Scene.s
+	@echo ... SceneParser.obj
+	@echo ... SceneParser.i
+	@echo ... SceneParser.s
 	@echo ... Sphere.obj
 	@echo ... Sphere.i
 	@echo ... Sphere.s

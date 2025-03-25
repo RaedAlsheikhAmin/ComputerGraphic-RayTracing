@@ -222,6 +222,34 @@ CMakeFiles/477hw1.dir/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/477hw1.dir/Light.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\Light.cpp" -o CMakeFiles\477hw1.dir\Light.cpp.s
 
+CMakeFiles/477hw1.dir/SceneParser.cpp.obj: CMakeFiles/477hw1.dir/flags.make
+CMakeFiles/477hw1.dir/SceneParser.cpp.obj: D:/8\ sem/CNG\ 477/Assignments/Assignment\ 1/477hw1/SceneParser.cpp
+CMakeFiles/477hw1.dir/SceneParser.cpp.obj: CMakeFiles/477hw1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/477hw1.dir/SceneParser.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/477hw1.dir/SceneParser.cpp.obj -MF CMakeFiles\477hw1.dir\SceneParser.cpp.obj.d -o CMakeFiles\477hw1.dir\SceneParser.cpp.obj -c "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\SceneParser.cpp"
+
+CMakeFiles/477hw1.dir/SceneParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/477hw1.dir/SceneParser.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\SceneParser.cpp" > CMakeFiles\477hw1.dir\SceneParser.cpp.i
+
+CMakeFiles/477hw1.dir/SceneParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/477hw1.dir/SceneParser.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\SceneParser.cpp" -o CMakeFiles\477hw1.dir\SceneParser.cpp.s
+
+CMakeFiles/477hw1.dir/Mesh.cpp.obj: CMakeFiles/477hw1.dir/flags.make
+CMakeFiles/477hw1.dir/Mesh.cpp.obj: D:/8\ sem/CNG\ 477/Assignments/Assignment\ 1/477hw1/Mesh.cpp
+CMakeFiles/477hw1.dir/Mesh.cpp.obj: CMakeFiles/477hw1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/477hw1.dir/Mesh.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/477hw1.dir/Mesh.cpp.obj -MF CMakeFiles\477hw1.dir\Mesh.cpp.obj.d -o CMakeFiles\477hw1.dir\Mesh.cpp.obj -c "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\Mesh.cpp"
+
+CMakeFiles/477hw1.dir/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/477hw1.dir/Mesh.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\Mesh.cpp" > CMakeFiles\477hw1.dir\Mesh.cpp.i
+
+CMakeFiles/477hw1.dir/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/477hw1.dir/Mesh.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\Mesh.cpp" -o CMakeFiles\477hw1.dir\Mesh.cpp.s
+
 # Object files for target 477hw1
 477hw1_OBJECTS = \
 "CMakeFiles/477hw1.dir/main.cpp.obj" \
@@ -234,7 +262,9 @@ CMakeFiles/477hw1.dir/Light.cpp.s: cmake_force
 "CMakeFiles/477hw1.dir/Sphere.cpp.obj" \
 "CMakeFiles/477hw1.dir/Triangle.cpp.obj" \
 "CMakeFiles/477hw1.dir/PPMWriter.cpp.obj" \
-"CMakeFiles/477hw1.dir/Light.cpp.obj"
+"CMakeFiles/477hw1.dir/Light.cpp.obj" \
+"CMakeFiles/477hw1.dir/SceneParser.cpp.obj" \
+"CMakeFiles/477hw1.dir/Mesh.cpp.obj"
 
 # External object files for target 477hw1
 477hw1_EXTERNAL_OBJECTS =
@@ -250,11 +280,13 @@ CMakeFiles/477hw1.dir/Light.cpp.s: cmake_force
 477hw1.exe: CMakeFiles/477hw1.dir/Triangle.cpp.obj
 477hw1.exe: CMakeFiles/477hw1.dir/PPMWriter.cpp.obj
 477hw1.exe: CMakeFiles/477hw1.dir/Light.cpp.obj
+477hw1.exe: CMakeFiles/477hw1.dir/SceneParser.cpp.obj
+477hw1.exe: CMakeFiles/477hw1.dir/Mesh.cpp.obj
 477hw1.exe: CMakeFiles/477hw1.dir/build.make
 477hw1.exe: CMakeFiles/477hw1.dir/linkLibs.rsp
 477hw1.exe: CMakeFiles/477hw1.dir/objects1
 477hw1.exe: CMakeFiles/477hw1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable 477hw1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable 477hw1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\477hw1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

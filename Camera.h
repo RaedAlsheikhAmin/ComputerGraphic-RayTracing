@@ -1,5 +1,5 @@
-#ifndef CAMERA_H
-#define CAMERA_H
+#ifndef INC_477HW1_CAMERA_H
+#define INC_477HW1_CAMERA_H
 
 #include "Vector3.h"
 #include "Ray.h"

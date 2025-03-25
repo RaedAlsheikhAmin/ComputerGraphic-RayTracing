@@ -1,5 +1,5 @@
-#ifndef MATERIAL_H
-#define MATERIAL_H
+#ifndef INC_477HW1_MATERIAL_H
+#define INC_477HW1_MATERIAL_H
 
 #include "Vector3.h"
 

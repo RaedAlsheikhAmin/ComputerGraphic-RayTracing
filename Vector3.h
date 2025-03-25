@@ -1,5 +1,5 @@
-#ifndef VECTOR3_H
-#define VECTOR3_H
+#ifndef INC_477HW1_VECTOR3_H
+#define INC_477HW1_VECTOR3_H
 
 #include <cmath>
 #include <iostream>
@@ -45,6 +45,7 @@ public:
 
     // Print (For Debugging)
     inline void print() const { std::cout << "(" << x << ", " << y << ", " << z << ")\n"; }
+    inline float length() const { return std::sqrt(x * x + y * y + z * z); }
 };
 
-#endif // VECTOR3_H
+#endif
