@@ -1,5 +1,5 @@
 //
-// Created by Hi on 3/24/2025.
+// Created by Raed Alsheikh Amin on 3/07/2025.
 //
 
 #ifndef INC_477HW1_SCENEPARSER_H

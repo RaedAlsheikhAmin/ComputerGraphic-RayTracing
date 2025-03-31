@@ -1,3 +1,8 @@
+//
+// Created by Raed Alsheikh Amin on 3/07/2025.
+//
+
+
 #ifndef INC_477HW1_VECTOR3_H
 #define INC_477HW1_VECTOR3_H
 
@@ -8,11 +13,11 @@ class Vector3 {
 public:
     float x, y, z;
 
-    // Constructors
+    // Constructors to instantiate the vector3 object
     Vector3() : x(0), y(0), z(0) {}
     Vector3(float x, float y, float z) : x(x), y(y), z(z) {}
 
-    // Basic Arithmetic Operations
+    // Basic Arithmetic Operations ( I might need them)
     inline Vector3 operator+(const Vector3& v) const { return Vector3(x + v.x, y + v.y, z + v.z); }
     inline Vector3 operator-(const Vector3& v) const { return Vector3(x - v.x, y - v.y, z - v.z); }
     inline Vector3 operator*(float scalar) const { return Vector3(x * scalar, y * scalar, z * scalar); }
@@ -32,6 +37,7 @@ public:
         float mag = std::sqrt(x*x + y*y + z*z);
         return (*this) / (mag > 0 ? mag : 1); // Avoid division by zero
     }
+    //negating vector
     inline Vector3 operator-() const { return Vector3(-x, -y, -z); }
     friend inline Vector3 operator*(float scalar, const Vector3& v) { return Vector3(scalar * v.x, scalar * v.y, scalar * v.z); }
 
@@ -41,6 +47,7 @@ public:
         z += v.z;
         return *this;
     }
+    //checking for equality
     bool operator==(const Vector3& other) const {
         return x == other.x && y == other.y && z == other.z;
     }

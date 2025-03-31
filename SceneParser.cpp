@@ -1,6 +1,15 @@
+//
+// Created by Raed Alsheikh Amin on 3/07/2025.
+//
+
+
+
+
 #include "SceneParser.h"
 #include <iostream>
 #include <sstream>
+
+//I will be using debug statements here to check if I am reading the file correctly, I am sorry if I forgot to delete them before submitting
 
 bool SceneParser::parseScene(const std::string& filename, Scene& scene, Camera& camera, RayTracer& rayTracer) {
     std::ifstream file(filename);
@@ -20,7 +29,7 @@ bool SceneParser::parseScene(const std::string& filename, Scene& scene, Camera& 
         if (line == "#BackgroundColor") {
             float r, g, b;
             file >> r >> g >> b;
-            scene.backgroundColor = Vector3(r, g, b);
+            scene.backgroundColor = Vector3(r, g, b)/255.0f;
             std::cout << "[Parsed] BackgroundColor: " << r << ", " << g << ", " << b << std::endl;
         }
         else if (line == "#MaxRecursionDepth") {
@@ -52,6 +61,10 @@ bool SceneParser::parseScene(const std::string& filename, Scene& scene, Camera& 
         else if (line == "#Material") {
             int materialID;
             file >> materialID;
+            if (materialID != scene.materials.size() + 1) {
+                std::cerr << "Warning: Material ID not sequential\n"; // to check if they are sequential or not
+            }
+
 
             float ar, ag, ab;
             float dr, dg, db;
@@ -78,24 +91,26 @@ bool SceneParser::parseScene(const std::string& filename, Scene& scene, Camera& 
         else if (line == "#AmbientLight") {
             float r, g, b;
             file >> r >> g >> b;
-            scene.lights.emplace_back(Vector3(0, 0, 0), Vector3(r, g, b) / 255.0f);
+            scene.lights.emplace_back(Vector3(0, 0, 0), Vector3(r, g, b)/255.0f);//there is a problem here, i am not finding the correct normalization
             std::cout << "[Parsed] AmbientLight: " << r << ", " << g << ", " << b << std::endl;
         }
         else if (line == "#PointLight") {
-            int lightCount;
-            file >> lightCount;
-            for (int i = 0; i < lightCount; i++) {
-                float px, py, pz;
-                float ir, ig, ib;
-                file >> px >> py >> pz;
-                file >> ir >> ig >> ib;
+            int lightID;
+            file >> lightID; // read the ID of the light
+            float px, py, pz;
+            float ir, ig, ib;
 
-                scene.addLight(Light(Vector3(px, py, pz), Vector3(ir, ig, ib) / 100000.0f));
+            file >> px >> py >> pz;    // read position (x, y, z)
+            file >> ir >> ig >> ib;    // read intensity (r, g, b)
 
-                std::cout << "[Parsed] PointLight at (" << px << ", " << py << ", " << pz << ") "
-                          << "with Intensity: (" << ir << ", " << ig << ", " << ib << ")\n";
-            }
+            // normalize the intensity values to [0,1] range by dividing by 255
+            scene.addLight(Light(Vector3(px, py, pz), Vector3(ir, ig, ib) / 255.0f));
+
+            std::cout << "[Parsed] PointLight ID: " << lightID
+                      << " at (" << px << ", " << py << ", " << pz << ")"
+                      << " with Intensity: (" << ir << ", " << ig << ", " << ib << ")\n";
         }
+
 
 
         else if (line == "#VertexList") {
@@ -138,11 +153,33 @@ bool SceneParser::parseScene(const std::string& filename, Scene& scene, Camera& 
 
 
         else if (line == "#Triangle") {
-            int materialID, v1, v2, v3;
-            file >> materialID >> v1 >> v2 >> v3;
-            scene.addObject(new Triangle(vertices[v1 - 1], vertices[v2 - 1], vertices[v3 - 1], scene.materials[materialID - 1]));
-            std::cout << "[Parsed] Triangle with Vertices: " << v1 << ", " << v2 << ", " << v3 << " using Material " << materialID << "\n";
+            int triangleID;
+            int materialID;
+            int v1, v2, v3;
+
+            file >> triangleID;
+            file >> materialID;
+            file >> v1 >> v2 >> v3;
+
+            // Validate indices
+            if (materialID < 1 || materialID > scene.materials.size()) {
+                std::cerr << "Invalid material ID " << materialID << " for Triangle " << triangleID << "\n";
+                continue;
+            }
+            if (v1 < 1 || v2 < 1 || v3 < 1 ||
+                v1 > vertices.size() || v2 > vertices.size() || v3 > vertices.size()) {
+                std::cerr << "Invalid vertex index for Triangle " << triangleID << "\n";
+                continue;
+            }
+
+            scene.addObject(new Triangle(
+                    vertices[v1 - 1], vertices[v2 - 1], vertices[v3 - 1],
+                    scene.materials[materialID - 1]));
+
+            std::cout << "[Parsed] Triangle ID: " << triangleID << ", Material ID: " << materialID
+                      << ", Vertices: " << v1 << ", " << v2 << ", " << v3 << "\n";
         }
+
         else if (line == "#Mesh") {
             int materialID;
             file >> materialID;

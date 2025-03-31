@@ -1,8 +1,12 @@
+//
+// Created by Raed Alsheikh Amin on 3/10/2025.
+//
+
 #ifndef INC_477HW1_TRIANGLE_H
 #define INC_477HW1_TRIANGLE_H
 
 #include "Object.h"
-
+//this class is explained will in the cpp file
 class Triangle : public Object {
 public:
     Vector3 v0, v1, v2, normal;
