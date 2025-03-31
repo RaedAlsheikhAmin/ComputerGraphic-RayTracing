@@ -9,31 +9,44 @@
 #include "Vector3.h"
 #include "SceneParser.h"
 
+int main(int argc, char* argv[]) {
+    // Ensure the program is run with a filename argument
+    if (argc < 2) {
+        std::cerr << "Usage: " << argv[0] << " <input file>" << std::endl;
+        return 1;
+    }
 
-int main() {
+    std::string inputFile = argv[1];
+    std::string outputFile = "outputtest222222.ppm"; // Output file name
+
+    // Initialize scene
     Scene scene(Vector3(0, 0, 0));
-    Camera camera(Vector3(0, 0, 0), Vector3(0, 0, -1), Vector3(0, 1, 0), -1, 1, -1, 1, 1, 800, 800);
+    Camera camera;
     RayTracer rayTracer(3, 1e-3);
-    std::vector<Material> materials; // Store materials separately
+    std::vector<Material> materials;
 
-    if (!SceneParser::parseScene("../input1.txt", scene, camera, rayTracer, materials)) {
+    // Parse the scene from input file
+    if (!SceneParser::parseScene(inputFile, scene, camera, rayTracer)) {
+        std::cerr << "Error: Failed to parse scene from " << inputFile << std::endl;
         return -1;
     }
 
-    // Prepare image buffer
-    std::vector<Vector3> pixels(800 * 800);
+    // Prepare image buffer with the actual camera resolution
+    int imageWidth = camera.width;
+    int imageHeight = camera.height;
+    std::vector<Vector3> pixels(imageWidth * imageHeight);
 
     // Ray Tracing Loop
-    for (int j = 0; j < 800; j++) {
-        for (int i = 0; i < 800; i++) {
+    for (int j = 0; j < imageHeight; j++) {
+        for (int i = 0; i < imageWidth; i++) {
             Ray ray = camera.generateRay(i, j);
-            pixels[j * 800 + i] = rayTracer.traceRay(ray, scene, 0);
+            pixels[j * imageWidth + i] = rayTracer.traceRay(ray, scene, 0);
         }
     }
 
     // Write output
-    PPMWriter::writePPM(pixels, 800, 800, "../outputtest1.ppm");
+    PPMWriter::writePPM(pixels, imageWidth, imageHeight, outputFile);
 
-    std::cout << "Rendering complete! Image saved as outputtest1.ppm" << std::endl;
+    std::cout << "Rendering complete! Image saved as " << outputFile << std::endl;
     return 0;
 }

@@ -10,6 +10,7 @@ class Scene {
 public:
     std::vector<Object*> objects;
     std::vector<Light> lights;
+    std::vector<Material> materials;
     Vector3 backgroundColor;
 
     Scene(const Vector3& backgroundColor);

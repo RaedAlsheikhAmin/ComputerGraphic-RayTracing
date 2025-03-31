@@ -15,22 +15,19 @@ void Scene::addLight(const Light& light) {
 }
 
 bool Scene::getClosestIntersection(const Ray& ray, float& t, Object*& closestObject) const {
-    float closestT = INFINITY;
-    Object* hitObject = nullptr;
+    t = INFINITY;
+    closestObject = nullptr;
+    bool hit = false;
 
     for (const auto& obj : objects) {
-        float currentT;
-        if (obj->intersect(ray, currentT) && currentT < closestT) {
-            closestT = currentT;
-            hitObject = obj;
+        float tempT;
+        if (obj->intersect(ray, tempT) && tempT < t) {
+            t = tempT;
+            closestObject = obj;
+            hit = true;
         }
     }
 
-    if (hitObject) {
-        t = closestT;
-        closestObject = hitObject;
-        return true;
-    }
-
-    return false;
+    return hit;
 }
+

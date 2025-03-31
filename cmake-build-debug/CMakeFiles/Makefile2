@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/477hw1.dir/all
+all: CMakeFiles/RayTracer.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/477hw1.dir/clean
+clean: CMakeFiles/RayTracer.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/477hw1.dir
+# Target rules for target CMakeFiles/RayTracer.dir
 
 # All Build rule for target.
-CMakeFiles/477hw1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target 477hw1"
-.PHONY : CMakeFiles/477hw1.dir/all
+CMakeFiles/RayTracer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target RayTracer"
+.PHONY : CMakeFiles/RayTracer.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/477hw1.dir/rule: cmake_check_build_system
+CMakeFiles/RayTracer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/477hw1.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RayTracer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\8 sem\CNG 477\Assignments\Assignment 1\477hw1\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/477hw1.dir/rule
+.PHONY : CMakeFiles/RayTracer.dir/rule
 
 # Convenience name for target.
-477hw1: CMakeFiles/477hw1.dir/rule
-.PHONY : 477hw1
+RayTracer: CMakeFiles/RayTracer.dir/rule
+.PHONY : RayTracer
 
 # clean rule for target.
-CMakeFiles/477hw1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/clean
-.PHONY : CMakeFiles/477hw1.dir/clean
+CMakeFiles/RayTracer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/clean
+.PHONY : CMakeFiles/RayTracer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

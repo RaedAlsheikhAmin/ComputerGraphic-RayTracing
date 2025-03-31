@@ -18,7 +18,7 @@
 
 class SceneParser {
 public:
-    static bool parseScene(const std::string& filename, Scene& scene, Camera& camera, RayTracer& rayTracer, std::vector<Material>& materials);
+    static bool parseScene(const std::string& filename, Scene& scene, Camera& camera, RayTracer& rayTracer);
 };
 
 

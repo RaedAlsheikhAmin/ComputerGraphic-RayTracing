@@ -14,22 +14,21 @@ bool Mesh::intersect(const Ray& ray, float& t) const {
     float closestT = INFINITY;
 
     for (const auto& tri : triangles) {
-        float tTemp;
-        if (tri->intersect(ray, tTemp) && tTemp < closestT) {
-            closestT = tTemp;
+        float tempT;
+        if (tri->intersect(ray, tempT) && tempT < closestT) {
+            closestT = tempT;
             hit = true;
         }
     }
 
-    if (hit) {
-        t = closestT;
-    }
+    if (hit) t = closestT;
     return hit;
 }
 
 Vector3 Mesh::getNormal(const Vector3& hitPoint) const {
+    // Optional: could compute per-triangle normal, but we'll return first
     if (!triangles.empty()) {
-        return triangles[0]->getNormal(hitPoint);  // Use first triangle's normal
+        return triangles[0]->getNormal(hitPoint);
     }
     return Vector3(0, 0, 0);
 }

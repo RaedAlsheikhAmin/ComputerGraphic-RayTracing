@@ -17,8 +17,8 @@
 					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="477hw1">
-				<Option output="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/477hw1.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="RayTracer">
+				<Option output="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/RayTracer.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -33,14 +33,14 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 477hw1"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 RayTracer"/>
 					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="477hw1/fast">
-				<Option output="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/477hw1.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="RayTracer/fast">
+				<Option output="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/RayTracer.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -55,7 +55,7 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 477hw1/fast"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 RayTracer/fast"/>
 					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,82 +83,82 @@
 			</Target>
 		</Build>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Camera.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Camera.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Light.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Light.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Material.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Material.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Mesh.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Mesh.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Object.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Object.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/PPMWriter.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/PPMWriter.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Ray.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Ray.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/RayTracer.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/RayTracer.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Scene.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Scene.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/SceneParser.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/SceneParser.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Sphere.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Sphere.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Triangle.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Triangle.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/Vector3.h">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/main.cpp">
-			<Option target="477hw1"/>
+			<Option target="RayTracer"/>
 		</Unit>
 		<Unit filename="D:/8 sem/CNG 477/Assignments/Assignment 1/477hw1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

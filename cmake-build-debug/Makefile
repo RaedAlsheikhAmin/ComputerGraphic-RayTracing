@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 477hw1
+# Target rules for targets named RayTracer
 
 # Build rule for target.
-477hw1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 477hw1
-.PHONY : 477hw1
+RayTracer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RayTracer
+.PHONY : RayTracer
 
 # fast build rule for target.
-477hw1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/build
-.PHONY : 477hw1/fast
+RayTracer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/build
+.PHONY : RayTracer/fast
 
 Camera.obj: Camera.cpp.obj
 .PHONY : Camera.obj
 
 # target to build an object file
 Camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Camera.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Camera.cpp.obj
 .PHONY : Camera.cpp.obj
 
 Camera.i: Camera.cpp.i
@@ -141,7 +141,7 @@ Camera.i: Camera.cpp.i
 
 # target to preprocess a source file
 Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Camera.cpp.i
 .PHONY : Camera.cpp.i
 
 Camera.s: Camera.cpp.s
@@ -149,7 +149,7 @@ Camera.s: Camera.cpp.s
 
 # target to generate assembly for a file
 Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
 Light.obj: Light.cpp.obj
@@ -157,7 +157,7 @@ Light.obj: Light.cpp.obj
 
 # target to build an object file
 Light.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Light.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Light.cpp.obj
 .PHONY : Light.cpp.obj
 
 Light.i: Light.cpp.i
@@ -165,7 +165,7 @@ Light.i: Light.cpp.i
 
 # target to preprocess a source file
 Light.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Light.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Light.cpp.i
 .PHONY : Light.cpp.i
 
 Light.s: Light.cpp.s
@@ -173,7 +173,7 @@ Light.s: Light.cpp.s
 
 # target to generate assembly for a file
 Light.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Light.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Light.cpp.s
 .PHONY : Light.cpp.s
 
 Material.obj: Material.cpp.obj
@@ -181,7 +181,7 @@ Material.obj: Material.cpp.obj
 
 # target to build an object file
 Material.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Material.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Material.cpp.obj
 .PHONY : Material.cpp.obj
 
 Material.i: Material.cpp.i
@@ -189,7 +189,7 @@ Material.i: Material.cpp.i
 
 # target to preprocess a source file
 Material.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Material.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Material.cpp.i
 .PHONY : Material.cpp.i
 
 Material.s: Material.cpp.s
@@ -197,7 +197,7 @@ Material.s: Material.cpp.s
 
 # target to generate assembly for a file
 Material.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Material.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Material.cpp.s
 .PHONY : Material.cpp.s
 
 Mesh.obj: Mesh.cpp.obj
@@ -205,7 +205,7 @@ Mesh.obj: Mesh.cpp.obj
 
 # target to build an object file
 Mesh.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Mesh.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Mesh.cpp.obj
 .PHONY : Mesh.cpp.obj
 
 Mesh.i: Mesh.cpp.i
@@ -213,7 +213,7 @@ Mesh.i: Mesh.cpp.i
 
 # target to preprocess a source file
 Mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Mesh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Mesh.cpp.i
 .PHONY : Mesh.cpp.i
 
 Mesh.s: Mesh.cpp.s
@@ -221,7 +221,7 @@ Mesh.s: Mesh.cpp.s
 
 # target to generate assembly for a file
 Mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Mesh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Mesh.cpp.s
 .PHONY : Mesh.cpp.s
 
 Object.obj: Object.cpp.obj
@@ -229,7 +229,7 @@ Object.obj: Object.cpp.obj
 
 # target to build an object file
 Object.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Object.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Object.cpp.obj
 .PHONY : Object.cpp.obj
 
 Object.i: Object.cpp.i
@@ -237,7 +237,7 @@ Object.i: Object.cpp.i
 
 # target to preprocess a source file
 Object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Object.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Object.cpp.i
 .PHONY : Object.cpp.i
 
 Object.s: Object.cpp.s
@@ -245,7 +245,7 @@ Object.s: Object.cpp.s
 
 # target to generate assembly for a file
 Object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Object.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Object.cpp.s
 .PHONY : Object.cpp.s
 
 PPMWriter.obj: PPMWriter.cpp.obj
@@ -253,7 +253,7 @@ PPMWriter.obj: PPMWriter.cpp.obj
 
 # target to build an object file
 PPMWriter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/PPMWriter.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/PPMWriter.cpp.obj
 .PHONY : PPMWriter.cpp.obj
 
 PPMWriter.i: PPMWriter.cpp.i
@@ -261,7 +261,7 @@ PPMWriter.i: PPMWriter.cpp.i
 
 # target to preprocess a source file
 PPMWriter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/PPMWriter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/PPMWriter.cpp.i
 .PHONY : PPMWriter.cpp.i
 
 PPMWriter.s: PPMWriter.cpp.s
@@ -269,7 +269,7 @@ PPMWriter.s: PPMWriter.cpp.s
 
 # target to generate assembly for a file
 PPMWriter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/PPMWriter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/PPMWriter.cpp.s
 .PHONY : PPMWriter.cpp.s
 
 Ray.obj: Ray.cpp.obj
@@ -277,7 +277,7 @@ Ray.obj: Ray.cpp.obj
 
 # target to build an object file
 Ray.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Ray.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Ray.cpp.obj
 .PHONY : Ray.cpp.obj
 
 Ray.i: Ray.cpp.i
@@ -285,7 +285,7 @@ Ray.i: Ray.cpp.i
 
 # target to preprocess a source file
 Ray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Ray.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Ray.cpp.i
 .PHONY : Ray.cpp.i
 
 Ray.s: Ray.cpp.s
@@ -293,7 +293,7 @@ Ray.s: Ray.cpp.s
 
 # target to generate assembly for a file
 Ray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Ray.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Ray.cpp.s
 .PHONY : Ray.cpp.s
 
 RayTracer.obj: RayTracer.cpp.obj
@@ -301,7 +301,7 @@ RayTracer.obj: RayTracer.cpp.obj
 
 # target to build an object file
 RayTracer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/RayTracer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/RayTracer.cpp.obj
 .PHONY : RayTracer.cpp.obj
 
 RayTracer.i: RayTracer.cpp.i
@@ -309,7 +309,7 @@ RayTracer.i: RayTracer.cpp.i
 
 # target to preprocess a source file
 RayTracer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/RayTracer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/RayTracer.cpp.i
 .PHONY : RayTracer.cpp.i
 
 RayTracer.s: RayTracer.cpp.s
@@ -317,7 +317,7 @@ RayTracer.s: RayTracer.cpp.s
 
 # target to generate assembly for a file
 RayTracer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/RayTracer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/RayTracer.cpp.s
 .PHONY : RayTracer.cpp.s
 
 Scene.obj: Scene.cpp.obj
@@ -325,7 +325,7 @@ Scene.obj: Scene.cpp.obj
 
 # target to build an object file
 Scene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Scene.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Scene.cpp.obj
 .PHONY : Scene.cpp.obj
 
 Scene.i: Scene.cpp.i
@@ -333,7 +333,7 @@ Scene.i: Scene.cpp.i
 
 # target to preprocess a source file
 Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Scene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Scene.cpp.i
 .PHONY : Scene.cpp.i
 
 Scene.s: Scene.cpp.s
@@ -341,7 +341,7 @@ Scene.s: Scene.cpp.s
 
 # target to generate assembly for a file
 Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Scene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Scene.cpp.s
 .PHONY : Scene.cpp.s
 
 SceneParser.obj: SceneParser.cpp.obj
@@ -349,7 +349,7 @@ SceneParser.obj: SceneParser.cpp.obj
 
 # target to build an object file
 SceneParser.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/SceneParser.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/SceneParser.cpp.obj
 .PHONY : SceneParser.cpp.obj
 
 SceneParser.i: SceneParser.cpp.i
@@ -357,7 +357,7 @@ SceneParser.i: SceneParser.cpp.i
 
 # target to preprocess a source file
 SceneParser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/SceneParser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/SceneParser.cpp.i
 .PHONY : SceneParser.cpp.i
 
 SceneParser.s: SceneParser.cpp.s
@@ -365,7 +365,7 @@ SceneParser.s: SceneParser.cpp.s
 
 # target to generate assembly for a file
 SceneParser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/SceneParser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/SceneParser.cpp.s
 .PHONY : SceneParser.cpp.s
 
 Sphere.obj: Sphere.cpp.obj
@@ -373,7 +373,7 @@ Sphere.obj: Sphere.cpp.obj
 
 # target to build an object file
 Sphere.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Sphere.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Sphere.cpp.obj
 .PHONY : Sphere.cpp.obj
 
 Sphere.i: Sphere.cpp.i
@@ -381,7 +381,7 @@ Sphere.i: Sphere.cpp.i
 
 # target to preprocess a source file
 Sphere.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Sphere.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Sphere.cpp.i
 .PHONY : Sphere.cpp.i
 
 Sphere.s: Sphere.cpp.s
@@ -389,7 +389,7 @@ Sphere.s: Sphere.cpp.s
 
 # target to generate assembly for a file
 Sphere.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Sphere.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Sphere.cpp.s
 .PHONY : Sphere.cpp.s
 
 Triangle.obj: Triangle.cpp.obj
@@ -397,7 +397,7 @@ Triangle.obj: Triangle.cpp.obj
 
 # target to build an object file
 Triangle.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Triangle.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Triangle.cpp.obj
 .PHONY : Triangle.cpp.obj
 
 Triangle.i: Triangle.cpp.i
@@ -405,7 +405,7 @@ Triangle.i: Triangle.cpp.i
 
 # target to preprocess a source file
 Triangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Triangle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Triangle.cpp.i
 .PHONY : Triangle.cpp.i
 
 Triangle.s: Triangle.cpp.s
@@ -413,7 +413,7 @@ Triangle.s: Triangle.cpp.s
 
 # target to generate assembly for a file
 Triangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/Triangle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/Triangle.cpp.s
 .PHONY : Triangle.cpp.s
 
 main.obj: main.cpp.obj
@@ -421,7 +421,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -429,7 +429,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -437,7 +437,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\477hw1.dir\build.make CMakeFiles/477hw1.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RayTracer.dir\build.make CMakeFiles/RayTracer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -448,7 +448,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... 477hw1
+	@echo ... RayTracer
 	@echo ... Camera.obj
 	@echo ... Camera.i
 	@echo ... Camera.s
